@@ -10,11 +10,13 @@ current_time = now.strftime("%H:%M:%S")
 user = input("Please enter the message to be sent")
 time = int(input("Please tell the time interval between each message")
 num = int(input("Please enter the number of times the message has to be sent")
- # short break
+# short break to switch to app or site.
 time.sleep(5)
  
 #pyautogui.alert('This is the message to display.')
 word = user+ "Sent at time:- " + current_time
-for i in range(10):
+for i in range(num):
     pyautogui.typewrite(word)
+          time.sleep(time)
+          
     
